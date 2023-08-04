@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="PaymentForm.css" />
+	<title>web DEV</title>
+</head>
+
+<body>
+	<div class="container">
+		<form action="" method="post">
+			<h1 style="text-align:center;"><u>Payment Form</u></h1>
+			<hr>
+			<p style="color:red;">* all fields are required.</p>
+			<hr>
+			<h3>User Details</h3>
+			Name : <input type="text" name="name" placeholder="Sarthak Negi" required><br><br>
+			Gender :<br>
+			<input type="radio" name="gender" id="1" required>Male
+			<input type="radio" name="gender" id="2" required>Female
+			<input type="radio" name="gender" id="3" required>Others <br><br>
+			Address : <textarea cols="30" rows="5" name="address" placeholder="Enter your full address..."
+				required></textarea>
+			<br><br>
+			E-mail : <input type="email" name="email" placeholder="abc@gmail.com" required><br><br>
+			Pincode : <input type="number" name="pincode" placeholder="123456" required><br><br>
+			<hr>
+			<h3>Payment Details</h3>
+			Card Type :
+			<select name="cardtype" required>
+				<option value="">- - select a card type - -</option>
+				<option value="rupay">Rupay</option>
+				<option value="visa">Visa</option>
+				<option value="mastercard">Mastercard</option>
+			</select><br><br>
+			Card Number : <input type="number" name="cardnumber" value="" placeholder="1111-2222-3333-4444" required>
+			<br><br>
+			Expiration Date : <input type="date" name="expirationdate" value="" required><br><br>
+			CVV : <input type="password" name="cvv" value="" placeholder="123" required><br><br>
+			<hr><br>
+			<input type="submit" value="Pay Now">&nbsp;
+			<input type="reset">
+		</form>
+	</div>
+</body>
+
+</html>
